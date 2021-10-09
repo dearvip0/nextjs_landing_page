@@ -12,7 +12,7 @@ import {
 } from "theme-ui";
 import { keyframes } from "@emotion/core";
 import TextFeature from "components/text-feature";
-import ModalVideo from "react-modal-video";
+// import ModalVideo from "react-modal-video";
 import { IoIosPlay } from "react-icons/io";
 
 import ServiceThumb from "assets/service-thumb.png";
@@ -53,7 +53,7 @@ export default function ServiceSection() {
   return (
     <section sx={{ variant: "section.services" }}>
       <Container sx={styles.contentBox}>
-        <Box sx={styles.thumbnail}>
+        {/* <Box sx={styles.thumbnail}>
           <Image src={ServiceThumb} alt="Thumbnail" />
           <Button
             sx={styles.videoBtn}
@@ -67,7 +67,7 @@ export default function ServiceSection() {
           <Box sx={styles.shapeBox}>
             <Image src={shapePattern} />
           </Box>
-        </Box>
+        </Box> */}
         <Box sx={styles.contentBox}>
           <TextFeature subTitle={data.subTitle} title={data.title} />
 
@@ -88,12 +88,12 @@ export default function ServiceSection() {
           </Grid>
         </Box>
       </Container>
-      <ModalVideo
+      {/* <ModalVideo
         onClose={() => setVideoOpen(false)}
         channel="youtube"
         isOpen={videoOpen}
         videoId="iGBERMGMIvc"
-      />
+      /> */}
     </section>
   );
 }
